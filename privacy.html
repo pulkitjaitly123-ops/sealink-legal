@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · SeaLink</title>
+<style>
+:root { color-scheme: light dark; --bg:#fbfcfd; --fg:#16232e; --dim:#4a5f70;
+        --accent:#0a6a8c; --line:#dde5ea; --card:#fff; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#061726; --fg:#eaf3fa; --dim:#93afc6; --accent:#4cc9f0;
+          --line:#1d4661; --card:#0d2740; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header { border-bottom:1px solid var(--line); margin-bottom:2rem; padding-bottom:1.25rem; }
+.brand { display:flex; align-items:center; gap:.7rem; text-decoration:none; color:inherit; }
+.brand strong { font-size:1.35rem; letter-spacing:-.02em; }
+nav a { color:var(--accent); text-decoration:none; margin-right:1.25rem; font-size:.95rem; }
+nav { margin-top:.9rem; }
+h1 { font-size:1.7rem; letter-spacing:-.02em; margin:2rem 0 .5rem; }
+h2 { font-size:1.2rem; color:var(--accent); margin:2.2rem 0 .5rem; }
+h3 { font-size:1.02rem; margin:1.5rem 0 .4rem; }
+p, li { color:var(--dim); }
+strong { color:var(--fg); }
+code { background:var(--card); border:1px solid var(--line); border-radius:4px;
+       padding:.1em .35em; font-size:.9em; }
+ul { padding-left:1.2rem; }
+footer { margin-top:4rem; padding-top:1.25rem; border-top:1px solid var(--line);
+         color:var(--dim); font-size:.85rem; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px;
+        padding:1.1rem 1.3rem; margin:1.5rem 0; }
+</style>
+</head><body><div class="wrap">
+<header>
+  <a class="brand" href="./"><strong>SeaLink</strong></a>
+  <nav><a href="./">Home</a><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms of Use</a></nav>
+</header>
+<h1>SeaLink privacy policy</h1>
+<p>Version 1.0. Last updated 4 September 2026.</p>
+<p>SeaLink lets a merchant navy seafarer share where they are with family members they have personally accepted. This policy describes exactly what the app collects, why, and who can see it. It is written to be read, not to be skipped.</p>
+<h2>The short version</h2>
+<ul>
+<li>Nothing about you is visible to anyone until you accept a connection request.</li>
+<li>The mariner chooses how precisely each family member sees them. A coarse</li>
+</ul>
+<p>setting is not a blur drawn over the real position: the precise coordinate is destroyed before it leaves our server.</p>
+<ul>
+<li>Family members do not share their own location unless they switch it on.</li>
+<li>You can delete your account, and everything attached to it, from inside the app.</li>
+<li>We do not sell data, we do not run advertising, and we do not use third party</li>
+</ul>
+<p>analytics or tracking.</p>
+<h2>What we collect</h2>
+<p><strong>When you create an account</strong></p>
+<ul>
+<li>Email address, used to sign in and to send the confirmation link.</li>
+<li>Display name, shown to people you connect with.</li>
+<li>Role, either mariner or family member. This cannot be changed later.</li>
+<li>Optionally, a mariner's rank or a family member's relationship to them.</li>
+</ul>
+<p><strong>When a mariner uses the app</strong></p>
+<ul>
+<li>Position fixes from the device, recorded only while sharing is on.</li>
+<li>The vessel identifier (MMSI or IMO) the mariner enters, used to look up the</li>
+</ul>
+<p>ship's public AIS position.</p>
+<ul>
+<li>Voyage details the mariner enters: ports, estimated arrival times, contract</li>
+</ul>
+<p>dates, and manning agent contact details.</p>
+<ul>
+<li>Check ins, which record only a timestamp.</li>
+<li>A count of bytes transmitted, so the in app data meter can be trusted.</li>
+</ul>
+<p><strong>When a family member uses the app</strong></p>
+<ul>
+<li>Position fixes, but only if you switch on sharing back to your mariner, which</li>
+</ul>
+<p>is off by default.</p>
+<p><strong>Automatically</strong></p>
+<ul>
+<li>Timestamps of when you were last online.</li>
+<li>Technical logs needed to run the service, including IP address at the time of</li>
+</ul>
+<p>a request, retained by our hosting provider.</p>
+<p>We do not collect contacts, photos, microphone audio, health data, advertising identifiers, or browsing activity. The app requests no permission it does not use.</p>
+<h2>Location, in detail</h2>
+<p>Location is the heart of this app, so it gets its own section.</p>
+<ul>
+<li><strong>Background collection.</strong> With your permission, a mariner's device records</li>
+</ul>
+<p>position while the app is not open. This is the entire point: a family needs to know where the ship is while the phone is in a pocket. It can be switched off at any time, and revoking the permission in the operating system stops it immediately.</p>
+<ul>
+<li><strong>How often.</strong> Position is recorded when it meaningfully changes, not</li>
+</ul>
+<p>continuously. A vessel alongside a berth records almost nothing.</p>
+<ul>
+<li><strong>Precision tiers.</strong> Each connection carries a precision: exact, approximately</li>
+</ul>
+<p>eleven kilometres, or approximately one hundred and eleven kilometres. The coarser tiers are applied on our server by rounding the coordinate onto a grid. The original value is not sent to that person in any form.</p>
+<ul>
+<li><strong>High risk areas.</strong> Inside declared piracy or conflict areas the precision is</li>
+</ul>
+<p>automatically reduced to the widest tier, whatever was granted, unless the mariner turns this off. This protects the vessel and its crew.</p>
+<ul>
+<li><strong>AIS.</strong> A vessel's AIS position is public information broadcast by the ship</li>
+</ul>
+<p>itself. We fetch it from a third party AIS provider using the identifier the mariner entered.</p>
+<h2>Who can see your data</h2>
+<ul>
+<li><strong>People you accepted.</strong> Only users with an accepted connection can see you,</li>
+</ul>
+<p>and only at the precision set for that connection. A pending request grants nothing.</p>
+<ul>
+<li><strong>Nobody else using the app.</strong> There is no directory and no search. Accounts</li>
+</ul>
+<p>are found only through a connect code that you choose to share, so your account cannot be discovered by guessing at an email address.</p>
+<ul>
+<li><strong>Our service providers</strong>, listed below.</li>
+<li><strong>Law enforcement</strong>, only where we are legally compelled.</li>
+</ul>
+<p>We do not sell personal information and we do not share it for advertising.</p>
+<h2>Service providers</h2>
+<ul>
+<li><strong>Supabase</strong>, database, authentication and hosting.</li>
+<li><strong>An AIS data provider</strong>, which receives the vessel identifier in order to</li>
+</ul>
+<p>return that vessel's public position. It does not receive anything about you.</p>
+<ul>
+<li><strong>A map tile provider</strong>, which serves map imagery to family devices. Tile</li>
+</ul>
+<p>requests reveal the map area being viewed to that provider.</p>
+<ul>
+<li><strong>Apple and Google</strong>, for push notification delivery.</li>
+</ul>
+<h2>Retention and deletion</h2>
+<ul>
+<li>Position history is kept for ninety days and then deleted.</li>
+<li>Account details, connections and voyage data are kept while the account exists.</li>
+<li><strong>Deleting your account</strong> removes your profile, your positions, your voyage,</li>
+</ul>
+<p>and every connection, immediately and permanently. Settings, then Delete my account. It is not recoverable, and we do not keep a shadow copy.</p>
+<ul>
+<li>Backups are retained for up to thirty days before being overwritten.</li>
+</ul>
+<h2>Your rights</h2>
+<p>Depending on where you live you may have rights to access, correct, export, or erase your personal data, and to object to processing. Account deletion inside the app covers erasure. For anything else, write to the address below and we will respond within thirty days.</p>
+<h2>Children</h2>
+<p>SeaLink is not intended for anyone under sixteen and we do not knowingly collect data from children. If you believe a child has an account, contact us and we will remove it.</p>
+<h2>Security</h2>
+<p>Data is encrypted in transit. Access rules are enforced by the database itself rather than only by the app, so a modified or malicious client cannot read data it was not granted. Position precision is applied server side before the data is sent.</p>
+<p>No system is perfect. If you find a vulnerability, please report it to the address below rather than disclosing it publicly.</p>
+<h2>A word on your employer</h2>
+<p>Some shipping companies contractually restrict crew from sharing vessel position or estimated arrival times. SeaLink gives you controls to limit what you share, but complying with your own company's policy is your responsibility, not ours.</p>
+<h2>Changes</h2>
+<p>If this policy changes materially we will tell you in the app before the change takes effect.</p>
+<h2>Contact</h2>
+<p>pulkitjaitly123@gmail.com</p>
+<p>SeaLink A-3/59, Third Floor Paschim Vihar New Delhi 110063 India</p>
+<footer>SeaLink · Knowing they are safe at sea</footer>
+</div></body></html>
